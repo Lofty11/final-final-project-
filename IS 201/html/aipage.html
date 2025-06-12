@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ping Pong Joke Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f7ff;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    #joke-box {
+      font-size: 1.5rem;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #e6f0ff;
+      width: 60%;
+    }
+    button {
+      background-color: #337ab7;
+      color: white;
+      font-size: 1rem;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #286090;
+    }
+    a {
+      display: block;
+      margin-top: 40px;
+      color: #337ab7;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏓 Ping Pong Joke Generator</h1>
+  <div id="joke-box">
+    Click the button to serve up a joke!
+  </div>
+  <button onclick="generateJoke()">Tell Me a Joke</button>
+
+  <a href="scratch.html">← Back to Scratch Page</a>
+
+  <script>
+    const jokes = [
+      "Why did the ping pong player bring a ladder? He wanted to reach new heights in his game!",
+      "Why do ping pong players never get into fights? Because they always let things bounce off.",
+      "What’s a ping pong player's favorite type of music? Anything with a good bounce!",
+      "Why did the paddle break up with the ball? It felt like they were just going back and forth.",
+      "Why did the ping pong ball get promoted? It always bounced back from failure.",
+      "What do you call a ping pong match between two comedians? A pun match!",
+      "Why don't ping pong players use the elevator? They prefer to take things one bounce at a time.",
+      "What do you say to a nervous ping pong ball? Don’t worry, you’ll serve a great purpose!"
+    ];
+
+    function generateJoke() {
+      const jokeBox = document.getElementById('joke-box');
+      const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+      jokeBox.innerText = randomJoke;
+    }
+  </script>
+
+</body>
+</html>

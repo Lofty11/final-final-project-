@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McKay's Home Page</title>
+  <link rel="stylesheet" href="./styles/pingpong-styles.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a> |
+    <a href="resume.html">Resume</a>
+  </div>
+
+  <div class="header">
+    <h1>Home Page</h1>
+  </div>
+
+  <div class="content">
+    <!-- Existing ping pong image -->
+    <img src="../Images/Pingpong.jpeg" alt="Ping Pong image" class="pingpong-image" />
+
+    <nav class="navbar">
+      <a href="#history">Jump to Ping Pong History</a>
+    </nav>
+
+    <p>Ping pong, also known as table tennis, is a fast-paced and exciting sport enjoyed worldwide.</p>
+
+    <div class="video-container">
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/4Ks4fJTFTXU" 
+        title="YouTube video about Ping Pong" 
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2 id="history">Ping Pong History and Facts</h2>
+    <ol>
+      <li>Origins
+        <ul>
+          <li>Invented in England, late 1800s</li>
+          <li>Originally played as a parlour game</li>
+          <li>Used makeshift equipment like books and cigar box lids</li>
+        </ul>
+      </li>
+      <li>Growth of the Sport
+        <ul>
+          <li>Standardized rules created in 1926</li>
+          <li>International Table Tennis Federation (ITTF) founded same year</li>
+          <li>Included in the Olympics since 1988</li>
+        </ul>
+      </li>
+      <li>Fun Facts
+        <ul>
+          <li>Fastest recorded ping pong ball speed is 116 km/h</li>
+          <li>Table tennis balls are only 2.7 cm in diameter</li>
+          <li>China has dominated international competitions for decades</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+</body>
+</html>
